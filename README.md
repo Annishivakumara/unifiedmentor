@@ -47,13 +47,13 @@ This is **not just theory** — every project here is built from scratch, helpin
 
 Here’s a quick look at some of the projects:
 
-### 🧑‍💻 About Me Page
+### 🧑‍💻 
 
-![about-me](./screenshots/about-me.png)
+![about-me](./RegistrationForm/Screenshot_4-7-2025_4377_10.252.131.86.jpeg)
 
 ### 📱 Responsive Profile Card
 
-![profile-card](./screenshots/profile-card.png)
+![profile-card](./RegistrationForm/Screenshot_4-7-2025_4377_10.252.131.86.jpeg)
 
 ---
 
