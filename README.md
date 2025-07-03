@@ -19,7 +19,6 @@ Each project focuses on **one or more core CSS topics**, including layout, displ
 > 📦 Each folder includes:
 > - HTML + CSS source code
 > - Preview screenshots
-> - A mini `README.md` with a quick explanation
 
 ---
 
@@ -71,9 +70,9 @@ Here’s a quick look at some of the projects:
 ## 🌈 Upcoming Projects
 
 - [ ] Responsive Portfolio Website
-- [ ] CSS Grid Layout Practice
-- [ ] Animated Button Effects
-- [ ] CSS-only Navbar
+- [1] CSS Grid Layout project
+- [2] Animated Button Effects
+- [3] CSS-only Navbar
 
 ---
 
