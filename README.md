@@ -12,7 +12,7 @@ Each project focuses on **one or more core CSS topics**, including layout, displ
 
 | 📁 Project Name | 🧠 Concepts Covered |
 |----------------|----------------------|
-| `01 - Calculator UI` | `box-model`, `display`, `padding`, `border`, `hover effects` |
+| `01 - Calculator ` | `box-model`, `display`, `padding`, `border`, `hover effects` |
 | `02 - Registration Form` | `form layout`, `input styling`, `labels`, `button design`, `margin/padding` |
 
 
@@ -47,11 +47,11 @@ This is **not just theory** — every project here is built from scratch, helpin
 
 Here’s a quick look at some of the projects:
 
-### 🧑‍💻 
+### 🧑‍💻 Calculator
 
-![about-me](./RegistrationForm/Screenshot_4-7-2025_4377_10.252.131.86.jpeg)
+![about-me](./calculator/calculator.jpeg)
 
-### 📱 Responsive Profile Card
+### 📱 Responsive  RegistrationForm
 
 ![profile-card](./RegistrationForm/Screenshot_4-7-2025_4377_10.252.131.86.jpeg)
 
@@ -81,9 +81,7 @@ Here’s a quick look at some of the projects:
 
 If you’re also on a frontend journey, let’s grow together 🚀
 
-- 🌐 [LinkedIn](https://linkedin.com/in/yourname)
-- 📷 [Instagram](https://instagram.com/yourhandle)
-- 💌 your.email@example.com
+- 💌 ashivu656@gmail.com
 
 Drop a ⭐ if you find this helpful!
 
@@ -91,7 +89,7 @@ Drop a ⭐ if you find this helpful!
 
 ## 📝 License
 
-This repo is under the [MIT License](LICENSE).  
+ 
 Feel free to clone, fork, and learn — just give credit 💖
 
 ---
