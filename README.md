@@ -12,11 +12,9 @@ Each project focuses on **one or more core CSS topics**, including layout, displ
 
 | 📁 Project Name | 🧠 Concepts Covered |
 |----------------|----------------------|
-| `01 - About Me Page` | `display`, `box-model`, `margin`, `padding` |
-| `02 - Simple Landing Page` | `position`, `z-index`, `background-image` |
-| `03 - Profile Card (Responsive)` | `media queries`, `border-radius`, `text-align` |
-| `04 - Flexbox Layout` | `flex-direction`, `gap`, `justify-content`, `align-items` |
-| `05 - Float-based Layout` | `float`, `clear`, `image wrapping` |
+| `01 - Calculator UI` | `box-model`, `display`, `padding`, `border`, `hover effects` |
+| `02 - Registration Form` | `form layout`, `input styling`, `labels`, `button design`, `margin/padding` |
+
 
 > 📦 Each folder includes:
 > - HTML + CSS source code
