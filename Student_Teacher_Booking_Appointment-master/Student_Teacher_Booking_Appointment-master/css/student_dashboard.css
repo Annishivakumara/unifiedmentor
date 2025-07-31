@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    background-image: url(../assets/download.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center 70%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.navbar {
+    background-color: white;
+    box-shadow: 3px 3px 5px black;
+    height: 80px;
+}
+
+.navbar .insideelements {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  height: 100%;
+}
+
+.insideelements li {
+    height: 60px;
+}
+
+.insideelements a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.insideelements .Logo-{
+    font-family: serif;
+    font-size: 1.7rem;
+    border: 3px solid blueviolet;
+    border-radius: 160px 100px 160px 100px;
+    background-color: bisque;
+margin: 10px;
+border: none;
+}
+
+.insideelements a:hover {
+    background-color: lightgrey;
+    border-radius: 20px;
+}
+
+.insideelements li:first-child {
+    margin-right: auto;
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(160, 160, 160, 0);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.082);
+    display:none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border: 2px solid #ccc;
+    list-style: none;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+    padding: 16px 20px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-size: 1.5rem;
+}
+
+.sidebar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.menubutton{
+    display: none;
+}
+.body-section{
+    
+    width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15rem;
+}
+
+
+.boxes{
+    border: 2px solid;
+    display: flex;
+    flex-direction: colu;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+    
+    .box{
+        width: 25rem ;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 50px ;
+           display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+        
+    }
+
+     .Schedule_Appointment{
+         box-shadow: -10px 0 40px rgba(160, 160, 160, 0.452);
+         
+         border-radius: 30px;
+       
+    }
+    .Schedule_Appointment button{
+        padding: 15px;
+        background-color: aquamarine;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    .Schedule_Appointment button a{
+            text-decoration: none;
+            color: black;
+            outline: 50px;
+            padding-bottom: 30px;
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            line-height: 1.1rem;
+    }
+    .Schedule_Appointment svg{
+          width: 100px;
+          height: 400px;
+        }
+        .Schedule_Appointment:hover{
+            background-color:rgba(97, 97, 197, 0.377) ;
+        }
+
+    /* Approve Or Cancel Design  */
+        .Approve-cancel{
+         box-shadow: -10px 0 40px rgba(160, 160, 160, 0.452);
+         border-radius: 20px ;
+        }
+         .Approve-cancel button{
+        padding: 15px;
+        background-color: aquamarine;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    .Approve-cancel button a{
+            text-decoration: none;
+            color: black;
+            outline: 50px;
+            padding-bottom: 30px;
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            line-height: 1.1rem;
+    }
+        .Approve-cancel svg{
+         width: 100px;
+          height: 400px;
+        }
+        .Approve-cancel:hover{
+                  background-color:rgba(97, 97, 197, 0.377) ;
+        }
+
+        
+        .view-messages {
+            box-shadow: -10px 0 40px rgba(160, 160, 160, 0.452);
+         border-radius: 20px ;
+        }
+         .view-messages button{
+        padding: 15px;
+        background-color: aquamarine;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    .view-messages button a{
+            text-decoration: none;
+            color: black;
+            outline: 50px;
+            padding-bottom: 30px;
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            line-height: 1.1rem;
+    }
+        .view-messages svg{
+          width: 100px;
+          height: 400px;
+        }
+        .view-messages:hover{
+             background-color:rgba(97, 97, 197, 0.377) ;
+        }
+        .view-all-Appointments{
+              box-shadow: -10px 0 40px rgba(160, 160, 160, 0.452);
+         border-radius: 20px ;
+         cursor: pointer;
+        }
+         .view-all-Appointments button{
+        padding: 15px;
+        background-color: aquamarine;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    .view-all-Appointments button a{
+            text-decoration: none;
+            color: black;
+            outline: 50px;
+            padding-bottom: 30px;
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            line-height: 1.1rem;
+    }
+        .view-all-Appointments svg{
+          width: 100px;
+          height: 400px;
+        } 
+        .view-all-Appointments:hover{
+            background-color:rgba(97, 97, 197, 0.377) ;
+        }
+
+    
+      
+.footer{
+    background-color: #0c0909;
+    color: white;
+    font-size: 10px;
+    width: 100%; /* Full width to span the page */
+    padding: 20px; /* Add padding for better spacing */
+    display: flex;
+    justify-content: space-between; /* Space out footer-elements and second-column */
+    align-items: center; /* Vertically center content */
+    border-top: 3px solid white; /* Keep border on top only for better aesthetics */
+    box-sizing: border-box;
+
+}
+.footer-elements{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    row-gap: 10px;
+}
+.footer-second{
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width:800px){
+    .hideOnMobile{
+     display: none;
+    }
+    .menubutton{
+        display: block;
+        background-color: black;
+
+    }  
+}
+@media(max-width:400px){
+    .sidebar{
+        width: 100%;
+    }
+    body{
+        background-size: 90%;
+        background-position: center 225px;
+    }
+     .box .Schedule_Appointment,
+   .Approve-cancel,
+   .view-messages,
+  .view-all-Appointments {
+    width: 90%;       /* Full width on small screens */
+    margin: 1rem;     /* Space between boxes */
+    padding: 2rem;    /* Smaller padding for small screen */
+  }
+  .box .Schedule_Appointment:hover{
+    background-color: #0c0909;
+  }
+}
+
+

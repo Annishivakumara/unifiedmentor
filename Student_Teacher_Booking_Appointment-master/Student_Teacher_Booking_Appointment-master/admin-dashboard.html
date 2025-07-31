@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="./css/student_dashboard.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="sidebar">
+        <li>
+          <a href="">
+            <img
+              style="color: black;"
+              src="./assets/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+          </a>
+        </li>
+        <li><a href="./admin-dashboard.html">Home</a></li>
+        <li><a href="./admin-events.html">Events</a></li>
+        <li><a href="./About_us.html">About us</a></li>
+        <li><a href="./contactform.html">Contact</a></li>
+      </ul>
+      <ul class="insideelements">
+        <li><a class="Logo-" href="./admin-dashboard.html">ADM</a></li>
+        <li class="hideOnMobile"><a href="./admin-dashboard.html">Home</a></li>
+        <li class="hideOnMobile"><a href="./admin-events.html">Event</a></li>
+        <li class="hideOnMobile"><a href="./About_us.html">About us</a></li>
+        <li class="hideOnMobile"><a href="./contactform.html">Contact</a></li>
+        <li class="menubutton" onclick="ShowSidebar()">
+          <a href="#">
+            <img
+              src="./assets/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <section>
+      <div class="body-section">
+        <div class="box Schedule_Appointment">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z"
+            />
+          </svg>
+          <button>
+            <a href="./BookAppointment_admin/manage_appointments.html"
+              >Manage Appointments</a
+            >
+          </button>
+        </div>
+        <div class="box Approve-cancel">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607ZM10.5 7.5v6m3-3h-6"
+            />
+          </svg>
+          <button>
+            <a href="./BookAppointment_admin/approve_cancel.html"
+              >Approve/Cancel Requests</a
+            >
+          </button>
+        </div>
+        <div class="box view-messages">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+            />
+          </svg>
+          <button>
+            <a href="./BookAppointment_admin/view_messages.html">View Messages</a>
+          </button>
+        </div>
+        <div class="box view-all-Appointments">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"
+            />
+          </svg>
+          <button>
+            <a href="./BookAppointment_admin/admin_dashboard.html">Dashboard</a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer class="original-footer">
+      <div class="footer">
+        <div class="footer-elements">
+          <h4>email: ashivu656@gmail.com</h4>
+          <h4>Creator: Anni Shivakumara</h4>
+          <h4>Personal Details</h4>
+          <div class="footer-second">
+            <h4>Feedback</h4>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/teacherDashBoard.js"></script>
+  </body>
+</html>

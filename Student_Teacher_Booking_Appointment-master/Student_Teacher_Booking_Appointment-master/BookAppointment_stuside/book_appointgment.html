@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="../css/book_appointment.css" />
+  </head>
+  <body>
+    
+    
+    <nav class="navbar">
+      <ul class="sidebar">
+        <li>
+          <a href="#" onclick="hideSidebar()">
+            <img
+              style="color: black;"
+              src="../assets/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="Close Menu"
+            />
+          </a>
+        </li>
+        <li><a href="../student-dashboard.html">Home</a></li>
+        <li><a href="../events.html">Events</a></li>
+        <li><a href="../About_us.html">About us</a></li>
+        <li><a href="../contactform.html">Contact</a></li>
+      </ul>
+      <ul class="insideelements">
+        <li><a href="../student-dashboard.html">STA</a></li>
+        <li class="hideOnMobile"><a href="../student-dashboard.html">Home</a></li>
+        <li class="hideOnMobile"><a href="../events.html">Event</a></li>
+        <li class="hideOnMobile"><a href="../About_us.html">About us</a></li>
+        <li class="hideOnMobile"><a href="../contactform.html">Contact</a></li>
+        <li class="menubutton" onclick="ShowSidebar()">
+          <a href="#">
+            <img
+              src="../assets/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+              alt="Menu"
+            />
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+   
+    <section class="body-section">
+      <div class="box Schedule_Appointment">
+        <h2>Book an Appointment</h2>
+        <form class="appointment-form">
+          <div class="form-group">
+            <label for="teacher">Select Teacher</label>
+            <select id="teacher" name="teacher" required>
+              <option value="" disabled selected>Choose a teacher</option>
+              <option value="teacher1">Dr. John Smith</option>
+              <option value="teacher2">Prof. Jane Doe</option>
+              <option value="teacher3">Ms. Emily Brown</option>
+             
+
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="date">Appointment Date</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+          <div class="form-group">
+            <label for="time">Appointment Time</label>
+            <input type="time" id="time" name="time" required />
+          </div>
+          <div class="form-group">
+            <label for="reason">Reason for Appointment</label>
+            <textarea
+              id="reason"
+              name="reason"
+              rows="4"
+              placeholder="e.g., Discuss project, academic advising, etc."
+              required
+            ></textarea>
+          </div>
+          <button type="submit">Submit Appointment</button>
+        </form>
+      </div>
+    </section>
+
+    
+
+   
+    <script src="../js/teacherDashBoard.js"></script>
+
+    <script>
+      document
+        .querySelector(".appointment-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); 
+          alert("Appointment submitted successfully!"); 
+          
+          this.reset(); 
+        });
+    </script>
+  </body>
+</html>

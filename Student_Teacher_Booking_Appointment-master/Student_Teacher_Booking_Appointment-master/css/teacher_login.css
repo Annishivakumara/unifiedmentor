@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+.container{
+   width: 90%;
+   max-width: 480px;
+    min-width: 300px;
+
+   height: 35rem;
+   min-height: 320px;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   justify-content: center;
+   background-color: #1976d2;
+   border-radius: 20px ;
+   transition: transform 0.3s ease;
+   box-shadow: 2px 4px 6px rgb(61, 53, 53);
+}
+.container :focus{
+    transform: scale(1.1rem);
+}
+.container .login{
+  padding: 150px 0;
+      width: 100%;
+}
+form h1{
+    position: relative;
+    bottom: 120px;
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color:white;
+    font-size: 2.1rem;
+  
+}
+.username{
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 50px;
+    position: relative;
+    bottom: 50px;
+    gap: 5px;
+    max-width: 400px;
+}
+
+.username label{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start; 
+    color: aliceblue;
+    font-size: 1.1rem;
+}
+.username #usernamei{
+    padding: 12px 20px ;
+    font-weight: normal;
+    text-align: start;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.1rem;
+}
+#usernamei:focus-visible{
+    outline: 3px solid aqua;
+}
+#usernamei:active{
+    background-color: aliceblue;
+    color: #1976d2;
+
+}
+.password{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 20px;
+    gap: 5px;
+    max-width: 400px;
+    margin: 0 50px;
+}
+.password label{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    color: aliceblue;
+}
+.password #passwordi{
+    font-size: 1.1rem;
+    padding: 12px 20px ;
+    font-weight: normal;
+    text-align: start;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    border: none;
+  
+}
+.password #passwordi:focus-visible{
+    outline: 3px solid aquamarine; 
+}
+
+
+.forgetpassword {
+   
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 16px auto;
+    border: none; /* Remove border unless you want it visible */
+     position: relative;
+     bottom: 15px;
+}
+/* Top | right | bottom | left */
+/*margin: 10px 20px 30px 40px;*/
+.forgetpassword a {
+    font-size: 12px;
+    color: rgb(93, 93, 180);
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 0.6px;
+}
+.SignIn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 24px auto;
+    
+    margin: 0 150px;
+}
+.SignIn button{
+    padding: 10px 0;
+    border-radius: 30px;
+     border: none;
+     display: flex;
+     flex-direction: column;
+     font-size: 1rem;
+     font-weight: bold;
+     letter-spacing: 1px;
+    background-color: #003399;
+    color: rgb(255, 249, 249);
+    cursor: pointer;
+    width: 100%;
+     margin-top: 8px;
+     transition: background 0.13s ease;
+
+}
+
+.SignIn button:hover {
+    background-color:  #95b8ff;
+    color: black;
+}
+.SignIn button:focus-visible{
+    color: black;
+}  
+.SignIn button:active{
+    background-color: rgb(255, 255, 255);
+}
+
+h4{
+  padding: 20px 0;
+ text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+  
+}
+h4>a{
+    text-decoration: none;
+    color: rgb(66, 22, 189);
+}
+.looti-files{
+    color: black;
+   
+}
+
+@media (max-width: 600px) {
+    .forgetpassword {
+        max-width: 65vw;
+        width: 100%;
+        margin: 0 auto 12px auto;
+        padding:  0;
+        
+    }
+    .SignIn {
+        max-width: 35vw;
+        width: 100%;
+        margin: 0 auto 12px auto;
+        padding: 0;
+    }
+    .SignIn button {
+        font-size: 0.95rem;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+}

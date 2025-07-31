@@ -1,0 +1,177 @@
+/* ...existing code... */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: flex-end;      /* Center horizontally */
+  align-items: center    ;      /* Center vertically */
+  height: 100vh;
+  background: #eef1f5;
+  margin: 0; 
+  position: fixed;
+  right: 100px;         /* Remove margin-right for true centering */
+   background-image: url(../assets/image.jpg);
+   background-repeat: no-repeat;
+   object-fit: cover;
+  
+  
+}
+
+.login-container {
+  min-width: 300px;
+  max-width: 480px; 
+  width: 100%; 
+  min-height: 400px;         /* More standard width */
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  right: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+ 
+}
+.login-form > h2{
+  font-size: 2.0rem;
+   position: relative;
+   bottom: 50px;
+}
+.login-form #span{
+font-size: 4rem;
+color: orange;
+}
+
+.login-form {
+  width: 100%;
+  height: 100%;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  gap: 20px;
+}
+.login-btn {
+  display: inline-block;
+  min-width: 300px;
+  max-width: 400px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 15px 10px;
+  border-radius: 4px;
+  margin-top: 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background 0.2s;
+  position: relative;
+  bottom: 2rem;
+}
+.login-btn:hover {
+  background-color: rgb(128, 150, 142);
+}
+
+#student-click:hover{
+  background-color: rgb(128, 150, 142);
+
+}
+#teacher-click:hover{
+  background-color: rgb(128, 150, 142);
+}
+#admin-click:hover{
+  background-color: rgb(128, 150, 142);
+}
+
+
+#error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.login-container > p {
+  text-align: end;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  width: calc(100% - 40px);
+}
+/* ...existing code... */
+
+/* ========== LAPTOP (Default styles already optimized, but here's a tweak) ========== */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  body {
+    justify-content: flex-end;
+    right: 100px;
+  }
+
+  .login-container {
+    max-width: 480px;
+    right: 100px;
+    transform: translateY(-50%);
+  }
+}
+
+/* ========== TABLET ========== */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    justify-content: center;
+    align-items: center;
+    right: 0;
+  }
+
+  .login-container {
+    max-width: 90%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    transform: translateY(-50%);
+  }
+
+  .login-btn {
+    min-width: 80%;
+  }
+}
+
+/* ========== MOBILE ========== */
+@media (max-width: 767px) {
+  body {
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px;
+    position: static;
+  }
+
+  .login-container {
+    width: 90%;
+    min-width: unset;
+    max-width: unset;
+    position: static;
+    transform: none;
+    box-shadow: none;
+    border-radius: 0;
+    min-height: auto;
+  }
+
+  .login-form > h2 {
+    font-size: 1.5rem;
+    bottom: 20px;
+  }
+
+  .login-btn {
+    min-width: 100%;
+  }
+
+  .login-container > p {
+    position: relative;
+    bottom: unset;
+    right: unset;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
